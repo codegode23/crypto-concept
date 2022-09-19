@@ -28,7 +28,7 @@ section{
 
 
 html::-webkit-scrollbar{
-    width: 1.4rem;
+    width: .4rem;
 }
 
 html::-webkit-scrollbar-track{
@@ -332,6 +332,8 @@ header .navbar ul li a:hover{
 
 .featured h1{
     font-size: 18px;
+    color: rgb(229, 182, 182);
+    margin-top: 5%;
 }
 
 .featured-container{
@@ -346,7 +348,15 @@ header .navbar ul li a:hover{
 
 .featured-container img{
     width: 100%;
-    max-width: 130px;
+    max-width: 80px;
+}
+
+@media screen and (max-width:400px){
+    
+.featured-container img{
+    width: 100%;
+    max-width: 60px;
+}
 }
 
 /*Analytics section*/
@@ -361,7 +371,7 @@ header .navbar ul li a:hover{
     justify-content: space-around;
     position: relative;
     flex-wrap: wrap-reverse;
-    margin-top: 2%;
+    margin-top: 6%;
     margin-left: 1%;
 }
 
@@ -792,6 +802,24 @@ footer{
 
 .footer-container .newsletter .search p{
     font-size: 15px;
+    cursor: pointer;
+   
+}
+}
+
+@media screen and (max-width:290px) {
+    
+    .footer-container .newsletter .news{
+ 
+        margin-left: 1%;
+    }
+
+.footer-container .newsletter .search input{
+    font-size: 12px;
+}
+
+.footer-container .newsletter .search p{
+    font-size: 12px;
     cursor: pointer;
    
 }
